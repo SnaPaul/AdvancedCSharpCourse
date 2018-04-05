@@ -13,8 +13,44 @@ namespace AdvancedCSharpCourse
         {
             //Generics();
 
-            Delegates();
+            //Delegates();
+
+            LambdaExpressions();
         }
+
+        static void LambdaExpressions()
+        {
+            // Basic syntax for lambda expression "args => expression"
+            // without arguments "() => ..."
+            // one argument "x => ..."
+            // more argumetnts "(x, y, z) => ..."
+
+            //Func<int, int> square = (number => number * number);
+
+            //const int factor = 5;
+
+            //Func<int, int> mulitplier = n => n * factor;
+
+            //var result = mulitplier(10);
+
+            //Console.WriteLine(result);
+
+            var books = new BookRepository().GetBooks();
+
+            //static bool IsCheaperThan10Dollars(Book book)
+            //{
+            //    return (book.Price < 10);
+            //}
+            //previos commented out function can be exchanged by lambda expresion
+            var cheapBooks = books.FindAll(book => book.Price < 10);
+
+            foreach(var book in cheapBooks)
+            {
+                Console.WriteLine(book.Title);
+            }
+        }
+
+
 
         static void Delegates()
         {
@@ -33,6 +69,7 @@ namespace AdvancedCSharpCourse
         {
             Console.WriteLine("Apply remove red eyes.");
         }
+
         static void Generics()
         {
             //var numbers = new List();
