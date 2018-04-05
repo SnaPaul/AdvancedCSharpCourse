@@ -11,6 +11,30 @@ namespace AdvancedCSharpCourse
     {
         static void Main(string[] args)
         {
+            //Generics();
+
+            Delegates();
+        }
+
+        static void Delegates()
+        {
+            PhotoPrecessor photoPrecessor = new PhotoPrecessor();
+            var filters = new PhotoFilters();
+
+            Action<Photo> filterHandler = filters.ApplyBrightness;
+            filterHandler += filters.ApplyContrast;
+            filterHandler += RemoveRedEyes;
+
+            photoPrecessor.Process("pathToNowhere", filterHandler);
+
+        }
+
+        static void RemoveRedEyes(Photo photo)
+        {
+            Console.WriteLine("Apply remove red eyes.");
+        }
+        static void Generics()
+        {
             //var numbers = new List();
             //numbers.Add(10);
 

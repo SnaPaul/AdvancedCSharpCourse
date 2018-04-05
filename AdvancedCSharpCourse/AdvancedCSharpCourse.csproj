@@ -46,6 +46,9 @@
     <Compile Include="DiscountCalculator.cs" />
     <Compile Include="Generics.cs" />
     <Compile Include="Nullable.cs" />
+    <Compile Include="Photo.cs" />
+    <Compile Include="PhotoFilters.cs" />
+    <Compile Include="PhotoPrecessor.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
