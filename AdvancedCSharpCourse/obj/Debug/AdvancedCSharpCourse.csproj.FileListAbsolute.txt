@@ -1,7 +1,0 @@
-D:\Paul\Projekte\AdvancedCSharpCourse\AdvancedCSharpCourse\bin\Debug\AdvancedCSharpCourse.exe.config
-D:\Paul\Projekte\AdvancedCSharpCourse\AdvancedCSharpCourse\bin\Debug\AdvancedCSharpCourse.exe
-D:\Paul\Projekte\AdvancedCSharpCourse\AdvancedCSharpCourse\bin\Debug\AdvancedCSharpCourse.pdb
-D:\Paul\Projekte\AdvancedCSharpCourse\AdvancedCSharpCourse\obj\Debug\AdvancedCSharpCourse.csprojResolveAssemblyReference.cache
-D:\Paul\Projekte\AdvancedCSharpCourse\AdvancedCSharpCourse\obj\Debug\AdvancedCSharpCourse.csproj.CoreCompileInputs.cache
-D:\Paul\Projekte\AdvancedCSharpCourse\AdvancedCSharpCourse\obj\Debug\AdvancedCSharpCourse.exe
-D:\Paul\Projekte\AdvancedCSharpCourse\AdvancedCSharpCourse\obj\Debug\AdvancedCSharpCourse.pdb
