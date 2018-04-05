@@ -15,7 +15,21 @@ namespace AdvancedCSharpCourse
 
             //Delegates();
 
-            LambdaExpressions();
+            //LambdaExpressions();
+
+            Events();
+        }
+
+        static void Events()
+        {
+            var video = new Video { Title = "Video 1" };
+            var videoEncoder = new VideoEncoder(); //event publisher
+            var mailService = new MailService(); //event subscriber
+            var messageService = new MessageService(); //event subscriber
+
+            videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
+            videoEncoder.Encode(video);
         }
 
         static void LambdaExpressions()
@@ -49,8 +63,6 @@ namespace AdvancedCSharpCourse
                 Console.WriteLine(book.Title);
             }
         }
-
-
 
         static void Delegates()
         {
