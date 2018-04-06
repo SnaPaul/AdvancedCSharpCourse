@@ -19,8 +19,69 @@ namespace AdvancedCSharpCourse
 
             //Events();
 
-           // ExtensionMethods();
+            // ExtensionMethods();
+
+            Linq();
         }
+
+        private static void Linq()
+        {
+            var books = new BookRepository().GetBooks();
+
+            //var cheapBooks = new List<Book>();
+            //foreach(var book in books)
+            //{
+            //    if(book.Price < 10)
+            //    {
+            //        cheapBooks.Add(book);
+            //    }
+            //}
+
+
+            ////instead of the code about use linq
+            //var cheapBooks = books
+            //                    .Where(book => (book.Price < 10))
+            //                    .OrderBy(book => book.Price)
+            //                    .Select(book => book.Title);
+
+            ////books.OrderBy(book => book.Title);
+
+            ////LINQ Query Operators
+            //var cheaperBooks =
+            //    from book in books
+            //    where book.Price < 10
+            //    orderby book.Price
+            //    select book.Title;
+
+            //foreach (var book in cheapBooks)
+            //{
+            //    //Console.WriteLine(book.Title + " " + book.Price);
+            //    Console.WriteLine(book);
+            //}
+
+            //LINQ Extension Methods
+            //var book = books.Single(b => b.Title == "ASP.NET MVC");
+            //var book = books.SingleOrDefault(b => b.Title == "ASP. NET MVC");
+            //Console.WriteLine(book == null);
+
+            //var book = books.First(b => b.Title == "C# Advanced Topics");
+            //Console.WriteLine(book.Title + " " + book.Price);
+
+            //var PagedBooks = books.Skip(2).Take(3);
+            //foreach(var book in PagedBooks)
+            //{
+            //    Console.WriteLine(book.Title);
+            //}
+
+            //var count = books.Count();
+            //Console.WriteLine(count);
+
+            var maxPrice = books.Max(b => b.Price);
+            var minPrice = books.Min(b => b.Price);
+            Console.WriteLine(maxPrice);
+            Console.WriteLine(minPrice);
+        }
+
 
         private static void ExtensionMethods()
         {
