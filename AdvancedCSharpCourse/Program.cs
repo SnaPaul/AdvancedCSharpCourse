@@ -21,7 +21,35 @@ namespace AdvancedCSharpCourse
 
             // ExtensionMethods();
 
-            Linq();
+            //Linq();
+
+            NullableTypes();
+        }
+
+        private static void NullableTypes()
+        {
+            //Nullable<DateTime> time = null;
+            //same as above
+            DateTime? date = null;// new DateTime(2018, 1, 1);
+            DateTime date1 = date.GetValueOrDefault(); //assign a nulluble to not nulluble by using the GetValueOrDefault() method.
+            DateTime? date2 = date1; //assign an not nulluble to nulluble, not a problem at all.
+
+            //Console.WriteLine("GetValueOrDefault(): " + date.GetValueOrDefault());
+            //Console.WriteLine("HasValue: " + date.HasValue);
+            //Console.WriteLine("Value: " + date.Value);
+
+            if (date != null)
+            {
+                date2 = date.GetValueOrDefault();
+            }
+            else
+            {
+                date2 = DateTime.Today;
+            }
+            //shorter implementaion of the code above
+            date2 = date ?? DateTime.Today;
+
+            Console.WriteLine(date2);
         }
 
         private static void Linq()
