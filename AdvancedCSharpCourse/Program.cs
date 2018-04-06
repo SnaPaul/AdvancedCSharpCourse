@@ -17,9 +17,19 @@ namespace AdvancedCSharpCourse
 
             //LambdaExpressions();
 
-            Events();
+            //Events();
+
+            ExtensionMethods();
         }
 
+        private static void ExtensionMethods()
+        {
+            string post = "This is supposed to be very long blog post blah blah blah...";
+            var shortenPost = post.Shorten(5);
+
+            Console.WriteLine(shortenPost);
+        }
+        
         static void Events()
         {
             var video = new Video { Title = "Video 1" };
