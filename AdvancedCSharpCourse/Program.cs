@@ -19,7 +19,7 @@ namespace AdvancedCSharpCourse
 
             //Events();
 
-            ExtensionMethods();
+           // ExtensionMethods();
         }
 
         private static void ExtensionMethods()
