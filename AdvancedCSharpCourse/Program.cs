@@ -23,7 +23,27 @@ namespace AdvancedCSharpCourse
 
             //Linq();
 
-            NullableTypes();
+            //NullableTypes();
+
+            Dynamics();
+        }
+
+        private static void Dynamics()
+        {
+            //dynamic excelObject = "Mosh";
+            //excelObject.Optimize();
+
+            //dynamic name = "Mosh";
+            //name++;// runtime exception
+
+            //dynamic a = 10;
+            //dynamic b = 5;
+            //var c = a + b; // will be dynamic as well
+
+            int i = 5;
+            dynamic d = i; //will be an integer during the runtime
+            long l = d; //not need for explicit casting
+
         }
 
         private static void NullableTypes()
