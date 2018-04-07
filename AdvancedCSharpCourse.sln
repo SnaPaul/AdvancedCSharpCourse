@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedCSharpCourse", "AdvancedCSharpCourse\AdvancedCSharpCourse.csproj", "{6872F194-229E-4F70-A6D5-B620365160CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousProgramming", "AsynchronousProgramming\AsynchronousProgramming.csproj", "{8C661C35-0E25-44C8-A1A3-058D2AAECA4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6872F194-229E-4F70-A6D5-B620365160CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6872F194-229E-4F70-A6D5-B620365160CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6872F194-229E-4F70-A6D5-B620365160CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C661C35-0E25-44C8-A1A3-058D2AAECA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C661C35-0E25-44C8-A1A3-058D2AAECA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C661C35-0E25-44C8-A1A3-058D2AAECA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C661C35-0E25-44C8-A1A3-058D2AAECA4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

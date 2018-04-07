@@ -22,7 +22,7 @@ namespace AdvancedCSharpCourse
                 throw new YouTubeException("Could not fetch the Videos from YouTube.", ex);
             }
 
-            return new List<Video>();
+            //return new List<Video>();
         }
 
     }

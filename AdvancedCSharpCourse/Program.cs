@@ -28,7 +28,14 @@ namespace AdvancedCSharpCourse
 
             //Dynamics();
 
-            ExceptionHandling();
+            //ExceptionHandling();
+
+            AsynchronousProgramming();
+        }
+
+        private static void AsynchronousProgramming()
+        {
+
         }
 
         private static void ExceptionHandling()
