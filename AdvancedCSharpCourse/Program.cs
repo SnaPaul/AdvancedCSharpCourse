@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace AdvancedCSharpCourse
 {
@@ -25,7 +26,74 @@ namespace AdvancedCSharpCourse
 
             //NullableTypes();
 
-            Dynamics();
+            //Dynamics();
+
+            ExceptionHandling();
+        }
+
+        private static void ExceptionHandling()
+        {
+            try
+            {
+                var calc = new Calculator();
+                calc.Divide(5, 0);
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (ArithmeticException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+               
+            }
+
+            StreamReader streamReader = null;
+            try
+            {
+                streamReader = new StreamReader(@"c:\file.zip");
+                var content = streamReader.ReadToEnd();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (streamReader != null)
+                {
+                    streamReader.Dispose();
+                }
+            }
+
+            try
+            {
+                using (var streamReader1 = new StreamReader(@"c:\file.zip"))
+                {
+                    var content = streamReader.ReadToEnd();
+                }       
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            try
+            {
+                var api = new YouTubeApi();
+                var videos = api.GetVideos("mosh");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("YouTube Api exception: " + ex.Message);
+            }
         }
 
         private static void Dynamics()

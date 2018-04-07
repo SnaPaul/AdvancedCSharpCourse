@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="BookRepository.cs" />
+    <Compile Include="Calculator.cs" />
     <Compile Include="DiscountCalculator.cs" />
     <Compile Include="Generics.cs" />
     <Compile Include="MailService.cs" />
@@ -60,6 +61,8 @@
     <Compile Include="Video.cs" />
     <Compile Include="VideoEncoder.cs" />
     <Compile Include="VideoEventArgs.cs" />
+    <Compile Include="YouTubeApi.cs" />
+    <Compile Include="YouTubeException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
